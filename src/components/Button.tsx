@@ -21,8 +21,8 @@ export default function Button({variant = 'grey', link, target = '_blank', child
             href={link}
             target={target}
             className={`${defaultClasses} ${variantClass[variant]} ${className}`}
-            {...rest}
             rel="noopener noreferrer"
+            {...rest}
         >
             {children}
         </a>
