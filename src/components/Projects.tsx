@@ -27,7 +27,7 @@ export default function Projects() {
 
                                 <p className="text-xs sm:text-sm">{project.highlight}</p>
 
-                                <div className="flex items-center gap-x-1.5">
+                                <div className="flex items-center gap-1.5 flex-wrap">
                                     {project.stack.map((item, index) => {
                                         return (
                                             <div

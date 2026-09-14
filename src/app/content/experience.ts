@@ -28,10 +28,10 @@ export const experiences = [
 ] as const satisfies readonly Experience[]
 
 export const stats = [
-    { title: '+6 yrs', description: 'Frontend engineering' },
-    { title: '+3 yrs', description: 'Real-time fintech' },
+    { title: '6+ yrs', description: 'Frontend engineering' },
+    { title: '3+ yrs', description: 'Real-time fintech' },
     { title: '4', description: 'Trading products shipped' },
     { title: 'Vue · React', description: 'Primary stacks' },
 ] as const satisfies readonly Stat[]
 
-export const stacks: Stack = ['TypeScript', 'Javascript','Vue', 'Nuxt', 'React', 'Next.js', 'Pinia', 'Vuex', 'Redux', 'Tailwind', 'Sass', 'Webpack', 'Strapi']
+export const stacks: Stack = ['TypeScript', 'JavaScript','Vue', 'Nuxt', 'React', 'Next.js', 'Pinia', 'Vuex', 'Redux', 'Tailwind', 'Sass', 'Webpack', 'Strapi']

@@ -36,7 +36,9 @@ export default function OpengraphImage() {
                     >
                         Z
                     </div>
-                    <div style={{ color: '#8b949e', fontSize: 26 }}>zahrahanifi.ir</div>
+                    <div style={{ color: '#8b949e', fontSize: 26 }}>
+                        https://portfolio-red-five-39.vercel.app/opengraph-image
+                    </div>
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 24 }}>
