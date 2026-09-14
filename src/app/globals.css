@@ -1,13 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #08090C;
+  --foreground: #F2F4F7;
+  --primary: #5AD6C0;
+  --grey: #A8B0BB;
+  --background-secondary: #131416;
+  --border-color: #ffffff1a;
+  --secondary: #6E8BFF;
+  --primary-dark: #00C6FF;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-grey: var(--grey);
+  --color-background-secondary: var(--background-secondary);
+  --color-border-color: var(--border-color);
+  --color-secondary: var(--secondary);
+  --color-primary-dark: var(--primary-dark);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -16,6 +28,12 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --primary: #5AD6C0;
+    --grey: #A8B0BB;
+    --background-secondary: #131416;
+    --border-color: #ffffff1a;
+    --secondary: #6E8BFF;
+    --primary-dark: #00C6FF;
   }
 }
 
@@ -23,4 +41,28 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+::selection {
+  background: var(--primary);
+  color: var(--background);
 }
