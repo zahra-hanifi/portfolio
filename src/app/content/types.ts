@@ -18,4 +18,4 @@ export type Stat = {
     description: string;
 }
 
-export type Stack = string[];
+export type Stack = readonly string[];

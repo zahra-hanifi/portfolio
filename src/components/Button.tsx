@@ -13,7 +13,7 @@ const variantClass: Record<Variant, string> = {
     transparent: 'text-primary p-0!',
 }
 
-const defaultClasses: string = 'p-3.5 rounded-full text-xs sm:text-sm cursor-pointer text-center'
+const defaultClasses: string = 'p-3.5 rounded-full text-xs sm:text-sm cursor-pointer text-center font-mono'
 
 export default function Button({variant = 'grey', link, target = '_blank', children, className = '', ...rest}: ButtonProps) {
     return (
@@ -22,6 +22,7 @@ export default function Button({variant = 'grey', link, target = '_blank', child
             target={target}
             className={`${defaultClasses} ${variantClass[variant]} ${className}`}
             {...rest}
+            rel="noopener noreferrer"
         >
             {children}
         </a>

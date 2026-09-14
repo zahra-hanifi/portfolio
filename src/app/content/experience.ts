@@ -34,4 +34,4 @@ export const stats = [
     { title: 'Vue · React', description: 'Primary stacks' },
 ] as const satisfies readonly Stat[]
 
-export const stacks: Stack = ['TypeScript', 'JavaScript','Vue', 'Nuxt', 'React', 'Next.js', 'Pinia', 'Vuex', 'Redux', 'Tailwind', 'Sass', 'Webpack', 'Strapi']
+export const stacks = ['TypeScript', 'JavaScript','Vue', 'Nuxt', 'React', 'Next.js', 'Pinia', 'Vuex', 'Redux', 'Tailwind', 'Sass', 'Webpack', 'Strapi'] as const satisfies Stack

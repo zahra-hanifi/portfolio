@@ -6,9 +6,9 @@ export default function ResumeSummary() {
             {stats.map((item, i) => {
                 return (
                     <div key={i} className="bg-background-secondary border border-border-color rounded-[18px] p-6 flex flex-col gap-y-3">
-                        <span className="text-2xl font-bold">{item.title}</span>
+                        <span className="text-2xl font-medium">{item.title}</span>
 
-                        <p className="text-xs sm:text-sm text-grey uppercase max-w-[90%]">{item.description}</p>
+                        <p className="text-xs sm:text-sm text-grey uppercase max-w-[90%] font-mono">{item.description}</p>
                     </div>
                 )
             })}

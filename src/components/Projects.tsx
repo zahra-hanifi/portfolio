@@ -5,7 +5,7 @@ export default function Projects() {
     return (
         <div className="pt-8 sm:pt-16 flex flex-col gap-y-4">
             <Reveal>
-                <h2 className="text-grey text-sm sm:text-base uppercase">Selected work</h2>
+                <h2 className="text-grey text-sm sm:text-base uppercase font-mono">Selected work</h2>
             </Reveal>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2.5">
@@ -15,7 +15,7 @@ export default function Projects() {
                             <div
                                 className="h-full bg-background-secondary border border-border-color rounded-[20px] p-5 sm:p-6 flex flex-col gap-y-5 hover:border-primary transition-all"
                             >
-                                <div className="flex items-center justify-between text-xs sm:text-sm">
+                                <div className="flex items-center justify-between text-xs sm:text-sm font-mono">
                                     <span className="text-grey">0{i + 1}</span>
 
                                     <span className="text-primary uppercase">{project.tag}</span>
@@ -32,7 +32,7 @@ export default function Projects() {
                                         return (
                                             <div
                                                 key={index}
-                                                className="py-1 px-2.5 border border-border-color rounded-full text-xs text-grey"
+                                                className="py-1 px-2.5 border border-border-color rounded-full text-xs text-grey font-mono"
                                             >
                                                 {item}
                                             </div>

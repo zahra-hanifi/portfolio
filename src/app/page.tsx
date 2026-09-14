@@ -9,12 +9,25 @@ import Reveal from "@/components/Reveal";
 export default function Home() {
   return (
       <>
-          <Reveal><IntroSection /></Reveal>
-          <Reveal><ResumeSummary /></Reveal>
+          <IntroSection />
+
+          <Reveal>
+              <ResumeSummary />
+          </Reveal>
+
           <Projects />
-          <Reveal><Experiences /></Reveal>
-          <Reveal><Contact /></Reveal>
-          <Reveal><Footer /></Reveal>
+
+          <Reveal>
+              <Experiences />
+          </Reveal>
+
+          <Reveal>
+              <Contact />
+          </Reveal>
+
+          <Reveal>
+              <Footer />
+          </Reveal>
       </>
   );
 }

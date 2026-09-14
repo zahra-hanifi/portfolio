@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 export default function IntroSection() {
     return (
         <div className="pt-8 sm:pt-16 flex flex-col gap-y-6 sm:gap-y-8">
-            <h1 className="text-[30px] sm:text-[52px] lg:text-[62px] font-bold leading-9 sm:leading-14">
+            <h1 className="text-[30px] sm:text-[52px] lg:text-[62px] font-medium leading-9 sm:leading-14">
                 Frontends for systems<br />
                 where <span className="bg-linear-to-r from-primary-dark to-primary bg-clip-text text-transparent">latency and</span> <br />
                 <span className="bg-linear-to-r from-secondary to-primary bg-clip-text text-transparent">uptime</span> are the product. <br />
