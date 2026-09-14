@@ -19,7 +19,7 @@ const description =
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zahrahanifi.ir"),
+  metadataBase: new URL("https://portfolio-red-five-39.vercel.app/"),
   title,
   description,
   authors: [{ name: 'Zahra Hanifi', url: 'https://github.com/zahra-hanifi' }],
