@@ -1,6 +1,6 @@
 # Portfolio
 
-Personal site — [portfolio-red-five-39.vercel.app](https://portfolio-red-five-39.vercel.app)
+Personal site — [zahra-hanifi.github.io](https://zahra-hanifi.github.io)
 
 A single-page portfolio built as my first project in React, Next.js and TypeScript,
 coming from six years of Vue and Nuxt.
@@ -10,7 +10,7 @@ coming from six years of Vue and Nuxt.
 - Next.js 16 (App Router)
 - React 19, TypeScript (`strict`)
 - Tailwind CSS v4
-- Deployed on Vercel
+- Static export (`output: "export"`), deployed to GitHub Pages via GitHub Actions
 
 ## Notes on a few decisions
 

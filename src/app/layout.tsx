@@ -19,7 +19,7 @@ const description =
 
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://portfolio-red-five-39.vercel.app/"),
+  metadataBase: new URL("https://zahra-hanifi.github.io/"),
   title,
   description,
   authors: [{ name: 'Zahra Hanifi', url: 'https://github.com/zahra-hanifi' }],
@@ -32,6 +32,14 @@ export const metadata: Metadata = {
     siteName: 'Zahra Hanifi',
     title,
     description,
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: title,
+      },
+    ],
   },
   robots: {
     index: true,

@@ -1,11 +1,13 @@
-// src/app/opengraph-image.tsx
+// src/app/opengraph-image.png/route.tsx
+// A route handler (not the opengraph-image file convention) so the static export
+// emits `opengraph-image.png` with an extension — GitHub Pages serves it as image/png.
 import { ImageResponse } from 'next/og'
 
-export const alt = 'Zahra Hanifi — Frontend Engineer'
-export const size = { width: 1200, height: 630 }
-export const contentType = 'image/png'
+export const dynamic = 'force-static'
 
-export default function OpengraphImage() {
+const size = { width: 1200, height: 630 }
+
+export function GET() {
     return new ImageResponse(
         (
             <div
@@ -37,7 +39,7 @@ export default function OpengraphImage() {
                         Z
                     </div>
                     <div style={{ color: '#8b949e', fontSize: 26 }}>
-                        https://portfolio-red-five-39.vercel.app/opengraph-image
+                        zahra-hanifi.github.io
                     </div>
                 </div>
 
